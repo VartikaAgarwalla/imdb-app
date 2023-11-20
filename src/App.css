@@ -1,0 +1,195 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.header .link {
+  margin: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.banner {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.banner .detail {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  color: white;
+}
+
+.movie-list-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: antiquewhite;
+  padding: 10px 50px;
+}
+
+.movie-list-wrapper  .movie-heading {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.movie-list-wrapper .movie-list {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+.movie-list-wrapper .movie-list .movie-card {
+  width: 300px;
+  height: 300px;
+  border: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  padding: 10px;
+  position: relative;
+  border: 1px solid #ccc;
+  background-size: cover;
+  margin: 10px 10px; 
+  display: inline-block;
+} 
+
+.movie-list-wrapper .movie-list .movie-card h3 a{
+  color: white;
+}
+
+.movie-list-wrapper .movie-list .movie-card button {
+  margin: auto;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 40px;
+  width: 140px;
+}
+
+.pagination {
+  display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.pagination button.selected {
+  background-color: aquamarine;
+}
+
+.favourite-page {
+  padding: 30px;
+}
+
+.favourite-page .left-section {
+  width: 30%;
+}
+
+.favourite-page .right-section {
+  width: 70%;
+}
+
+.favourite-page .right-section table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.favourite-page .right-section table td {
+  border: 1px solid #ccc;
+    padding: 10px 10px;
+}
+
+.genres-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.genres-wrapper ul {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.genres-wrapper ul li{
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  list-style: none;
+}
+
+.genres-wrapper ul li.selected {
+  background-color: blue;
+  color: white;
+}
+
+.favourite-page .wrapper {
+  display: flex;
+}
+
+.addMovie {
+  width: 400px;
+}
+.addMovie label {
+  width: 150px;
+  display: inline-block;
+}
+
+.addMovie input {
+  width: 200px;
+}
+
+.addMovie .row {
+  padding: 10px 15px;
+}
